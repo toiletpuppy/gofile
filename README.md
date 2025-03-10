@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Upload files to GoFile
-        uses: your-username/your-repo-name@v1.0.0
+        uses: toiletpuppy/gofile@New
         with:
           files: "path/to/file1.txt path/to/file2.zip"
 ```
