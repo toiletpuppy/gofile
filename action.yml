@@ -1,0 +1,12 @@
+name: 'GoFile Upload'
+description: 'A GitHub Action to upload files to GoFile.io'
+author: 'Your Name'
+inputs:
+  files:
+    description: 'Space-separated list of file paths to upload'
+    required: true
+runs:
+  using: 'composite'
+  steps:
+    - run: bash gofile.sh ${{ inputs.files }}
+      shell: bash
